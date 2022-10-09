@@ -18,7 +18,9 @@ h3, .home, .hamburger {
 }
 
 nav {
-    min-width: 335px;
+    /* 
+    min-width: 360px;
+     */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,6 +76,25 @@ button:hover {
     li {
         display: none;
     }
+
+    /* Ho letto male inizialmente la question dell'esercizio e 
+    credevo di dover lasciare anche la barra di ricerca.
+    Ci sono delle righe apparentemente inutili su questo CSS perchè 
+    ho cercato di mantenere il layout stabile
+    anche a una larghezza di 360px. Decommentando "Min-width" ed
+    eliminando i prossimi due selettori e le relative proprietà la nav 
+    ritornerà come l'avevo inizialmente fatta */ 
+
+    form {
+        display: none;
+    }
+
+    .hamburger{
+        position: absolute;
+        right: 3%;
+    }
+    /*Fino a qui*/
+
     .hamburger {
         display: initial;
     }
